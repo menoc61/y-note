@@ -70,40 +70,58 @@ Le **Système de Gestion des Factures** est une solution logicielle complète co
 Le projet suit l'architecture **MVC** pour une séparation claire des responsabilités. Voici la structure du répertoire :
 
 ```text
-invoice-management/
-├── app/
-│ ├── controllers/
-│ │ ├── AuthController.php
-│ │ ├── DashboardController.php
-│ │ └── ...
-│ ├── models/
-│ │ ├── UserModel.php
-│ │ ├── ContactModel.php
-│ │ └── ...
-│ ├── views/
-│ │ ├── auth/
-│ │ │ ├── login.php
-│ │ │ ├── register.php
-│ │ ├── dashboard/
-│ │ │ ├── index.php
-│ │ └── ...
-│ ├── routes/
-│ │ └── web.php
-│ ├── core/
-│ │ ├── Database.php
-│ │ ├── Controller.php
-│ │ └── Model.php
-├── public/
-│ ├── assets/
-│ │ ├── css/
-│ │ │ └── tailwind.css
-│ │ ├── js/
-│ │ │ └── main.js
-│ │ └── images/
-│ └── index.php
-├── .env
-├── composer.json
-└── README.md
+└── 📁y-note
+
+    └── 📁app
+        └── 📁controllers
+            └── AuthController.php
+            └── DashboardController.php
+        └── 📁models
+            └── ContactModel.php
+            └── InvoiceModel.php
+            └── LogModel.php
+            └── PaymentModel.php
+            └── UserModel.php
+        └── 📁views
+            └── 📁auth
+                └── login.php
+                └── register.php
+            └── 📁dashboard
+                └── index.php
+    └── 📁core
+        └── Controller.php
+        └── Database.php
+        └── Model.php
+    └── 📁docs
+        └── 📁diagram
+        └── 📁images
+            └── MVC-Architecture.webp
+            └── schema-database.png
+        └── project.sql
+        └── 📁report
+    └── 📁public
+        └── 📁assets
+            └── favicon.ico
+            └── 📁images
+                └── logo.png
+                └── logo@244x228.png
+        └── 📁css
+            └── custom.css
+        └── index.html
+        └── index.php
+        └── 📁js
+            └── app.js
+            └── main.js
+        └── manifest.json
+        └── service-worker.js
+    └── 📁routes
+        └── web.php
+    └── .htaccess
+    └── .env
+    └── .gitignore
+    └── composer.json
+    └── composer.lock
+    └── README.md
 ```
 ---
 
@@ -135,3 +153,6 @@ Le **Contrôleur** agit comme un intermédiaire entre le Modèle et la Vue. Il t
 ```bash
 composer install    
 ```
+Start Your Local Server:
+
+Run your local server (e.g., php -S localhost:8000 -t public).
